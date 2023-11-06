@@ -37,7 +37,7 @@ module "lb" {
 
 module "sg" {
   source  = "app.terraform.io/yuzeir-org/sg/aws"
-  version = "1.0.0"
+  version = "1.1.0"
   vpc_id = module.network.vpc_id
   cidr_block_allow = var.cidr_block_allow
   app_port = var.app_port
